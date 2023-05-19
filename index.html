@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counted Tech</title>
+    <style>
+        .dashboard{
+            width: full;
+            height: 100%;
+            background-color: #f2f5fa;
+            padding: 0px 0px 0px 10px;
+        }
+        .logo{
+            width: 90px;
+            height: 90px;
+            margin: 0px 10px 20x 2px;
+            object-fit: contain;
+        }
+        .icon1 {
+            width: 40px;
+            height: 40px;
+            margin: 25px 7px 45px 10px;
+            object-fit: contain;
+        }
+        .icon2 {
+            width: 40px;
+            height: 40px;
+            margin: 25px 7px 45px;
+        }
+        .icon3 {
+          width: 40px;
+          height: 40px;
+          margin: 25px 7px 45px;
+          object-fit: contain;
+        } 
+        .icon4 {
+          width: 40px;
+          height: 40px;
+          margin: 25px 7px 45px;
+          object-fit: contain;
+           object-fit: contain;
+        }
+        .icon5 {
+          width: 40px;
+          height: 40px;
+          margin: 25px 7px 45px;
+          object-fit: contain;
+        }
+        .icon6 {
+          width: 40px;
+          height: 40px;
+          margin: 25px 148px 45px 7px;
+          object-fit: contain;
+        }
+        .menu-bar{
+            margin-top: -10px;
+        }
+        nav{
+            display: flex;
+            flex-direction: row;
+        }
+        .list-all{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 90px;
+            height: 55px;
+            margin: 0 10px 1px 0;
+            padding: 8px 16px 8px 16px;
+            border-radius: 15px;
+            background-color: #fff;
+        }
+        .all{
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: 600;
+            color: #000;
+        }
+        .btnn{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 5px;
+            height: 20px;
+            margin: 8px 7px 8px 7px;
+            padding: 3px 37px 3px 37px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .bl{
+            background-color: #4269e1;
+        }
+        .gr{
+            background-color: #4fe142;
+        }
+        .re{
+            background-color: #e14242;
+        }
+        .pu{
+            background-color: #cb42e1;
+        }
+        .br{
+            background-color: #e19842;
+        }
+        .span{
+            margin-left: 11px;
+            width: 20px;
+            height: 20px;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #fff; 
+        }
+        .intro-list{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+
+
+
+
+
+
+
+
+
+
+        .card1{
+            width: 290px;
+            height: 117px;
+            display: flex;
+            margin: 33px 12px 15px 18px;
+            padding: 15px 16px 14px 17px;
+            border-radius: 15px;
+            background-color: #fff;
+            flex-direction: column;
+        }
+        .cardd{
+            display: flex;
+            flex-direction: row;
+        }
+        .card-content{
+            text-align: center;
+            margin-top: 32px;
+        }
+        .three{
+            font-family: Poppins;
+            font-size: 24px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #fff;
+        }
+        .red{
+            border-radius: 3px;
+            display: flex;
+            background-color: #e14242;
+            width: 25px;
+            height: 30px;
+            margin-right: 12px;
+            justify-content: center;
+            align-items: center;
+        }
+        .redm{
+            border-radius: 3px 0px 0px 3px;
+            display: flex;
+            background-color: #e14242;
+            width: 35px;
+            height: 30px;
+            justify-content: flex-end;
+            align-items: right;
+        }
+        .green{
+            border-radius: 3px;
+            display: flex;
+            background-color: #4fe142;
+            width: 25px;
+            height: 30px;
+            margin-right: 12px;
+            justify-content: center;
+            align-items: center;
+        }
+        .greenm{
+            border-radius: 0px 3px 3px 0px;
+            display: flex;
+            background-color: #4fe142;
+            width: 115px;
+            height: 30px;
+            justify-content: flex-start;
+            align-items: left;
+        }
+        .view{
+            background-color: #4269e1;
+            height: 30px;
+            margin-left: 40px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="navbar">
+            <nav>
+                <a href="/"><img src="img/logo.svg" class="logo"></a>
+                <div class="menu-bar">
+                    <a href="/"><img src="img/icon1.svg" class="icon1"></a>
+                    <a href="/"><img src="img/icon2.svg" class="icon2"></a>
+                    <a href="/"><img src="img/icon3.svg" class="icon3"></a>
+                    <a href="/"><img src="img/icon4.svg" class="icon4"></a>
+                    <a href="/"><img src="img/icon5.svg" class="icon5"></a>
+                    <a href="/"><img src="img/icon6.svg" class="icon6"></a>
+                </div>
+            </nav>
+        </div>
+        <div class="intro-list">
+            <div class="list-all">
+                <span class="all">All</span>
+                <div class="btnn bl">
+                    <span class="span">4</span>
+                </div>
+            </div>
+            <div class="list-all">
+                <span class="all">Available</span>
+                <div class="btnn gr">
+                    <span class="span">4</span>
+                </div>
+            </div>
+            <div class="list-all">
+                <span class="all">Inactive</span>
+                <div class="btnn re">
+                    <span class="span">4</span>
+                </div>
+            </div>
+            <div class="list-all">
+                <span class="all">Absent</span>
+                <div class="btnn pu">
+                    <span class="span">4</span>
+                </div>
+            </div>
+            <div class="list-all">
+                <span class="all">Vacation</span>
+                <div class="btnn br">
+                    <span class="span">4</span>
+                </div>
+            </div>
+        </div>
+        <div class="body-list">
+            <div class="top">
+                <div class="card1">
+                    <div class="cardd">
+                        <div class="red">
+                            <span class="three">3</span>
+                        </div>
+                        <div class="green">
+                            <span class="three">3</span>
+                        </div><div class="redm">
+                            <span class="three">4</span>
+                        </div>
+                        <div class="greenm">
+                            <span class="three">5555555</span>
+                        </div>
+                        <div class="view">
+                            <img src="img/View.svg" class="view-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <span>Lorem ipsum dolor sit amet.<br>Unde culpa eveniet,</span>
+                    </div>
+                </div><div class="card1">
+                    <div class="cardd">
+                        <div class="red">
+                            <span class="three">3</span>
+                        </div>
+                        <div class="green">
+                            <span class="three">3</span>
+                        </div><div class="redm">
+                            <span class="three">4</span>
+                        </div>
+                        <div class="greenm">
+                            <span class="three">5555555</span>
+                        </div>
+                        <div class="view">
+                            <img src="img/View.svg" class="view-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <span>Lorem ipsum dolor sit amet.<br>Unde culpa eveniet,</span>
+                    </div>
+                </div><div class="card1">
+                    <div class="cardd">
+                        <div class="red">
+                            <span class="three">3</span>
+                        </div>
+                        <div class="green">
+                            <span class="three">3</span>
+                        </div><div class="redm">
+                            <span class="three">4</span>
+                        </div>
+                        <div class="greenm">
+                            <span class="three">5555555</span>
+                        </div>
+                        <div class="view">
+                            <img src="img/View.svg" class="view-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <span>Lorem ipsum dolor sit amet.<br>Unde culpa eveniet,</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom"></div>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- <head>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard bg-gray-200 h-screen px-10">
+        <div class="navbar">
+            <nav>
+                <a href="/"><img src="img/logo.svg" class="logo"></a>
+                <a href="/"><img src="img/icon1.svg" class="icon1"></a>
+                <a href="/"><img src="img/icon2.svg" class="icon2"></a>
+                <a href="/"><img src="img/icon3.svg" class="icon3"></a>
+                <a href="/"><img src="img/icon4.svg" class="icon4"></a>
+                <a href="/"><img src="img/icon5.svg" class="icon5"></a>
+                <a href="/"><img src="img/icon6.svg" class="icon6"></a>
+            </nav>
+        </div>
+        <div class="intro-list space-x-2">
+            <div class="list-all">
+                <span class="all">All</span>
+                <div class="btnn bg-blue-500">
+                    <span class="span">4</span>
+                </div>
+            </div>
+            <div class="list-all">
+                <span class="all">Available</span>
+                <div class="btnn bg-green-500">
+                    <span class="span">4</span>
+                </div>
+            </div>
+            <div class="list-all">
+                <span class="all">Inactive</span>
+                <div class="btnn bg-red-500">
+                    <span class="span">4</span>
+                </div>
+            </div>
+            <div class="list-all">
+                <span class="all">Absent</span>
+                <div class="btnn bg-purple-500">
+                    <span class="span">4</span>
+                </div>
+            </div>
+            <div class="list-all">
+                <span class="all">Vacation</span>
+                <div class="btnn bg-yellow-500">
+                    <span class="span">4</span>
+                </div>
+            </div>
+        </div>
+        <div class="body-list">
+            <div class="top">
+                <div class="card1 bg-white rounded-3xl flex items-center mx-8 my-16 py-8 px-10">
+                    <div class="red rounded flex bg-red-500 w-6 h-8 mr-3">
+                        <span class="three text-white">3</span>
+                    </div>
+                    <div class="green rounded flex bg-green-500 w-6 h-8 mr-3">
+                        <span class="three text-white">3</span>
+                    </div>
+                    <div class="redm rounded-r-none flex bg-red-500 w-8 h-8">
+                        <span class="three text-white">4</span>
+                    </div>
+                    <div class="greenm rounded-l-none flex bg-green-500 w-32 h-8">
+                        <span class="three text-white">5555555</span>
+                    </div>
+                    <div class="view">
+                        <img src="img/View.svg" class="view-img">
+                    </div>
+                </div>
+            </div>
+            <div class="bottom"></div>
+        </div>
+    </div>
+</body> -->
